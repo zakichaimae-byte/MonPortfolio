@@ -4,45 +4,33 @@
 */
 
 :root {
-    /* Gray Mode / Mode Gris */
-    --bg-color: #f3f4f6;
-    /* Gray 100 - Soft Light Gray */
-    --bg-alt: #ffffff;
-    /* White - For cards */
-    --text-main: #1f2937;
-    /* Gray 800 - Deep Gray */
-    --text-muted: #6b7280;
-    /* Gray 500 */
-    --primary: #4b5563;
-    /* Gray 600 - Professional Steel */
-    --secondary: #9ca3af;
-    /* Gray 400 - Silver */
-    --accent: #111827;
-    /* Gray 900 - Sharp Contrast */
-    --glass: rgba(255, 255, 255, 0.9);
+    /* Theme: Grey & White (Modern & Minimalist) */
+
+    /* Light Mode */
+    --bg-color: #ffffff;
+    /* White */
+    --bg-alt: #f8f9fa;
+    /* Lightest Gray */
+    --text-main: #1a1a1a;
+    /* Near Black */
+    --text-muted: #666666;
+    /* Medium Gray */
+    --primary: #333333;
+    /* Dark Gray - Main color */
+    --secondary: #888888;
+    /* Gray - For highlights */
+    --accent: #000000;
+    /* Black */
+
+    --glass: rgba(255, 255, 255, 0.95);
     --glass-border: rgba(0, 0, 0, 0.05);
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+
     --font-main: 'Poppins', sans-serif;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body.dark-mode {
-    --bg-color: #020617;
-    /* Deep Slate/Black */
-    --bg-alt: #0f172a;
-    /* Rich Slate */
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --primary: #6366f1;
-    /* Indigo */
-    --secondary: #a855f7;
-    /* Purple */
-    --accent: #2dd4bf;
-    /* Teal */
-    --glass: rgba(15, 23, 42, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
-}
+/* Dark Mode Removed */
 
 /* Reset & Base */
 * {
@@ -104,6 +92,7 @@ h3 {
 .text-gradient {
     background: linear-gradient(to right, var(--primary), var(--secondary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -190,7 +179,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.1), transparent 40%);
+    background: radial-gradient(circle at top right, rgba(100, 100, 100, 0.1), transparent 40%);
     padding-top: 80px;
     /* Offset for fixed header */
 }
@@ -518,49 +507,13 @@ header {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 1rem;
 }
 
 .project-card {
-    background: var(--bg-alt);
-    padding: 0;
-    /* Remove padding to let image bleed to edges */
-    border-radius: 15px;
-    border: 1px solid var(--glass-border);
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 1px solid var(--glass-border);
-}
-
-.project-content-wrapper {
-    padding: 2rem;
-}
-
-.project-card h3 {
-    margin-bottom: 0.5rem;
-    padding: 0 2rem;
-    /* Add padding here if not using wrapper, or just use wrapper approach for cleaner structure. Let's keep it simple and just adding padding to internal elements implies changing HTML structure more. */
-}
-
-/* Actually, a cleaner way without changing HTML structure too much (since I already have content in there mixed) is to just target children.
-   But current HTML is: img, h3, div, p, a.
-   If I remove padding on .project-card, the text will touch edges.
-   So I should wrap text in a div OR just add padding to the elements.
-    display: flex;
-    justify-content: center;
-}
-
-.project-card {
-    background: var(--bg-alt);
+    background: var(--bg-color);
     border-radius: 20px;
     border: 1px solid var(--glass-border);
     transition: var(--transition);
@@ -569,49 +522,7 @@ header {
     overflow: hidden;
     position: relative;
     box-shadow: var(--shadow);
-}
-
-.project-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-bottom: 1px solid var(--glass-border);
-    display: block;
-    transition: transform 0.5s ease;
-}
-
-.project-card:hover img {
-    transform: scale(1.1);
-}
-
-.project-card h3,
-.project-card p,
-.project-card .tech-stack,
-.project-card .project-link {
-    padding: 0 2rem;
-}
-
-.project-card h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-}
-
-.project-card .tech-stack {
-    margin-bottom: 1rem;
-}
-
-.project-card p {
-    margin-bottom: 2rem;
-    flex-grow: 1;
-    line-height: 1.6;
-}
-
-.project-card .project-link {
-    padding-bottom: 2rem;
-    display: inline-flex;
-    width: 100%;
-    box-sizing: border-box;
+    height: 100%;
 }
 
 .project-card:hover {
@@ -620,22 +531,91 @@ header {
     box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.15);
 }
 
-.project-card h3 {
+.project-img-wrapper {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--glass-border);
+    position: relative;
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-img-wrapper img {
+    transform: scale(1.1);
+}
+
+/* Overlay effect on image hover */
+.project-img-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-img-wrapper::after {
+    opacity: 1;
+}
+
+.project-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1rem;
+}
+
+.project-header {
     margin-bottom: 0.5rem;
 }
 
-.project-card .tech-stack {
-    color: var(--secondary);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+.project-header h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-main);
+    line-height: 1.3;
 }
 
-.project-card p {
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tech-stack span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    background: var(--bg-alt);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+}
+
+.project-card:hover .tech-stack span {
+    background: var(--primary);
+    color: var(--bg-color);
+    border-color: var(--primary);
+}
+
+.project-info p {
     color: var(--text-muted);
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    /* Pushes the link to the bottom */
 }
 
 .project-link {
@@ -645,11 +625,29 @@ header {
     color: var(--primary);
     font-weight: 600;
     transition: var(--transition);
+    align-self: flex-start;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.project-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--secondary);
+    transition: var(--transition);
 }
 
 .project-link:hover {
-    text-decoration: none;
+    color: var(--secondary);
     gap: 0.8rem;
+}
+
+.project-link:hover::after {
+    width: 100%;
 }
 
 /* Contact */
@@ -659,19 +657,84 @@ header {
 }
 
 .contact-container {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
 
+.contact-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
 .contact-info {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 1rem;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-alt);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    font-family: var(--font-main);
+    color: var(--text-main);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(100, 100, 100, 0.1);
+}
+
+.contact-form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--font-main);
+}
+
+/* Responsive for form */
+@media (max-width: 768px) {
+    .contact-content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
 }
 
 .contact-item {
@@ -723,6 +786,436 @@ header {
     border-color: var(--primary);
     transform: translateY(-5px) rotate(10deg);
     box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    header {
+        padding: 1.5rem 5%;
+    }
+
+    section {
+        padding: 4rem 5%;
+    }
+
+    .hero {
+        padding-top: 100px;
+        flex-direction: column-reverse;
+        /* Image top, text bottom on mobile? Or standard vertical stack */
+        /* Usually text on top is better for SEO/UX, but let's see design req. */
+        /* Let's keep it simple: column-reverse puts image on top if html order is text first? No. */
+        /* HTML: text, then image. column-reverse -> image first, then text. */
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .btn-box {
+        justify-content: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        text-align: center;
+    }
+
+    .about-content h2::after {
+        margin: 10px auto;
+    }
+
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 0;
+    }
+
+    .timeline-item:nth-child(odd) {
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: -8px;
+        right: auto;
+    }
+
+    /* Arrows fix for mobile timeline */
+    .timeline-item:nth-child(odd) .timeline-content::before {
+        border-width: 0 0 1px 1px;
+        left: -8px;
+        right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        color: var(--text-main);
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 5%;
+        background: var(--bg-alt);
+        border-bottom: 1px solid var(--glass-border);
+        display: none;
+        flex-direction: column;
+        gap: 1.5rem;
+        box-shadow: var(--shadow);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-container {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 90%;
+    }
+
+    .hero-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+/* Blog Section */
+.blog {
+    background: var(--bg-color);
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.blog-card {
+    background: var(--bg-alt);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--primary);
+    color: var(--bg-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 99;
+    text-decoration: none;
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--secondary);
+    transform: translateY(-5px);
+    color: var(--bg-color);
+}
+
+/* Project Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(15, 23, 42, 0.8);
+    /* Dark overlay */
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center vertically if content is short, else scroll */
+    opacity: 1;
+}
+
+/* For long content/scroll, flex centering might need adjustment. 
+   Better to let it scroll naturally if content is long. */
+@media (min-height: 800px) {
+    .modal.show {
+        align-items: center;
+    }
+}
+
+.modal-content {
+    background-color: var(--bg-alt);
+    margin: 5% auto;
+    /* 5% from top and centered */
+    padding: 2rem;
+    border: 1px solid var(--glass-border);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transform: scale(0.7);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+    margin-top: auto;
+    margin-bottom: auto;
+    /* Flex centering override if needed, or rely on flex */
+}
+
+/* Close Button */
+.close-btn {
+    color: var(--text-muted);
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    line-height: 1;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Internal Styles */
+.modal-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 1rem;
+}
+
+.modal-header h2 {
+    font-size: 2rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.modal-subheader {
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modal-section h3 {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.modal-section h3 i {
+    color: var(--secondary);
+}
+
+.modal-section p,
+.modal-section li {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.modal-section ul {
+    list-style-position: inside;
+    padding-left: 0.5rem;
+}
+
+.modal-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-modal {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--bg-color);
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+}
+
+.btn-outline {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: var(--bg-color);
+}
+
+@media (max-width: 768px) {
+    .modal-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+        padding: 1.5rem;
+    }
+}
+
+.blog-card:hover::before {
+    opacity: 1;
+}
+
+.blog-date {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.blog-card h3 {
+    font-size: 1.3rem;
+    color: var(--text-main);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.blog-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.read-more {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+    align-self: flex-start;
+}
+
+.read-more:hover {
+    gap: 0.8rem;
+    color: var(--secondary);
 }
 
 /* Footer */
@@ -1012,6 +1505,31 @@ footer {
     .timeline-dot {
         left: -9px !important;
     }
+}
+
+.form-status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: none;
+    text-align: center;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.form-status.success {
+    display: block;
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.form-status.error {
+    display: block;
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
 @media (max-width: 768px) {
