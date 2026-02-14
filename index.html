@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaimae Zaki | Web Developer & Future Security Expert</title>
+    <title data-i18n="page-title">Chaimae Zaki | Web & Backend Developer</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description"
@@ -56,28 +56,33 @@
         </div>
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#clubs">Activities</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="active" data-i18n="nav-home">Home</a>
+            <a href="#about" data-i18n="nav-about">About</a>
+            <a href="#skills" data-i18n="nav-skills">Skills</a>
+            <a href="#education" data-i18n="nav-education">Education</a>
+            <a href="#clubs" data-i18n="nav-activities">Activities</a>
+            <a href="#projects" data-i18n="nav-projects">Projects</a>
+            <a href="#contact" data-i18n="nav-contact">Contact</a>
+            <div class="lang-switcher">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-fr" class="lang-btn">FR</button>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h3>Hello, I am</h3>
+            <h3 data-i18n="hero-greeting">Hello, I am</h3>
             <h1>Chaimae Zaki</h1>
-            <h3 class="text-gradient">Backend Development & Linux Enthusiast</h3>
-            <p>I enjoy designing efficient backend solutions and building custom automation tools for Linux systems.
+            <h3 class="text-gradient" data-i18n="hero-role">Web & Backend Developer</h3>
+            <p data-i18n="hero-bio">I enjoy designing efficient backend solutions and building scalable web
+                applications.
                 Ready to contribute and grow as a developer.</p>
 
             <div class="btn-box">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="CV.pdf" download class="btn">Download CV</a>
+                <a href="#projects" class="btn" data-i18n="hero-view-projects">View Projects</a>
+                <a href="CV.pdf" download class="btn" data-i18n="hero-download-cv">Download CV</a>
 
             </div>
         </div>
@@ -97,31 +102,34 @@
         </div>
 
         <div class="about-content">
-            <h2 class="section-title" style="text-align: left; margin: 0 0 2rem;">About Me</h2>
+            <h2 class="section-title" style="text-align: left; margin: 0 0 2rem;" data-i18n="about-title">About Me</h2>
             <p class="about-text">
-                <strong>Final-year Software Engineering Student — Backend Development & Linux Enthusiast</strong>
+                <strong data-i18n="about-summary">Final-year Software Engineering Student — Web & Backend
+                    Developer</strong>
                 <br><br>
-                I am a final-year Software Engineering student with a strong focus on backend development and Linux
-                systems. I enjoy designing and implementing efficient backend solutions, as well as creating scripts and
-                tools that simplify workflows and automate repetitive tasks.
+                <span data-i18n="about-p1">I am a final-year Software Engineering student with a strong focus on backend
+                    development and building modern web architectures. I enjoy designing and implementing efficient
+                    backend solutions, ensuring scalability and performance across varied projects.</span>
                 <br><br>
-                My academic projects include leading a team to develop a C++ Smart City Simulation (Raylib) and building
-                a web application with Laravel, showcasing both my collaborative and technical skills.
+                <span data-i18n="about-p2">My academic projects include leading a team to develop a C++ Smart City
+                    Simulation (Raylib) and building a web application with Laravel, showcasing both my collaborative
+                    and technical skills.</span>
                 <br><br>
-                I am looking for an internship or junior developer role where I can contribute my expertise, take on
-                technical challenges, and continue growing as a backend developer.
+                <span data-i18n="about-p3">I am looking for an internship or junior developer role where I can
+                    contribute my expertise, take on technical challenges, and continue growing as a backend
+                    developer.</span>
             </p>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
-        <h2 class="section-title">Technical Skills</h2>
+        <h2 class="section-title" data-i18n="skills-title">Technical Skills</h2>
 
         <div class="skills-grid">
             <!-- Core Languages -->
             <div class="skill-category">
-                <h3>Core Languages</h3>
+                <h3 data-i18n="skills-core">Core Languages</h3>
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
                     <span class="skill-tag"><i class="fa-solid fa-c"></i> C/C++</span>
@@ -133,28 +141,28 @@
 
             <!-- Backend & Web -->
             <div class="skill-category">
-                <h3>Backend & Web</h3>
+                <h3 data-i18n="skills-backend">Backend & Web</h3>
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                    <span class="skill-tag">MVC</span>
+                    <span class="skill-tag" data-i18n="skill-mvc">MVC</span>
                     <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
                 </div>
             </div>
 
             <!-- Databases & Modeling -->
             <div class="skill-category">
-                <h3>Databases & Modeling</h3>
+                <h3 data-i18n="skills-db">Databases & Modeling</h3>
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
                     <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
-                    <span class="skill-tag">Merise</span>
-                    <span class="skill-tag">UML</span>
+                    <span class="skill-tag" data-i18n="skill-merise">Merise</span>
+                    <span class="skill-tag" data-i18n="skill-uml">UML</span>
                 </div>
             </div>
 
             <!-- Automation & Engineering -->
             <div class="skill-category">
-                <h3>Automation & Engineering</h3>
+                <h3 data-i18n="skills-automation">Automation & Engineering</h3>
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
                     <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
@@ -166,13 +174,18 @@
 
             <!-- Soft Skills -->
             <div class="skill-category">
-                <h3>Qualities & Soft Skills</h3>
+                <h3 data-i18n="skills-soft">Qualities & Soft Skills</h3>
                 <div class="skill-items">
-                    <span class="skill-tag"><i class="fa-solid fa-check-circle"></i> Rigorous</span>
-                    <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> Curious</span>
-                    <span class="skill-tag"><i class="fa-solid fa-people-group"></i> Team Spirit</span>
-                    <span class="skill-tag"><i class="fa-solid fa-person-running"></i> Persistent</span>
-                    <span class="skill-tag"><i class="fa-solid fa-brain"></i> Continuous Learning</span>
+                    <span class="skill-tag"><i class="fa-solid fa-check-circle"></i> <span
+                            data-i18n="skill-rigorous">Rigorous</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> <span
+                            data-i18n="skill-curious">Curious</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-people-group"></i> <span data-i18n="skill-team">Team
+                            Spirit</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-person-running"></i> <span
+                            data-i18n="skill-persistent">Persistent</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-brain"></i> <span
+                            data-i18n="skill-learning">Continuous Learning</span></span>
                 </div>
             </div>
         </div>
@@ -180,7 +193,7 @@
 
     <!-- Education / Timeline Section -->
     <section class="education" id="education">
-        <h2 class="section-title">My Education</h2>
+        <h2 class="section-title" data-i18n="edu-title">My Education</h2>
 
         <div class="timeline">
             <!-- Item 4: Bac -->
@@ -188,16 +201,16 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">2021 – 2022</div>
-                    <h3>Baccalaureate — Physical Sciences</h3>
-                    <p>Scientific foundation and work discipline.</p>
+                    <h3 data-i18n="edu-bac-title">Baccalaureate — Physical Sciences</h3>
+                    <p data-i18n="edu-bac-desc">Scientific foundation and work discipline.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">2022 – 2025</div>
-                    <h3>DEUST — MIPC</h3>
-                    <p>Mathematics, Computer Science, Physics, and Chemistry.<br>
+                    <h3 data-i18n="edu-deust-title">DEUST — MIPC</h3>
+                    <p data-i18n="edu-deust-desc">Mathematics, Computer Science, Physics, and Chemistry.<br>
                         Solid base: scientific rigor and abstraction.</p>
                 </div>
             </div>
@@ -206,9 +219,10 @@
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="timeline-date">Present</div>
-                    <h3>Bachelor's in App Dev Engineering</h3>
-                    <p>Computer application development. Focus on software architectures and backend.</p>
+                    <div class="timeline-date" data-i18n="edu-present">Present</div>
+                    <h3 data-i18n="edu-bachelor-title">Bachelor's in App Dev Engineering</h3>
+                    <p data-i18n="edu-bachelor-desc">Computer application development. Focus on software architectures
+                        and backend.</p>
                 </div>
             </div>
 
@@ -216,9 +230,10 @@
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="timeline-date">Future Goal</div>
-                    <h3>Master's in Security & Systems</h3>
-                    <p>Specialization in cybersecurity, security auditing, and data protection.</p>
+                    <div class="timeline-date" data-i18n="edu-future">Future Goal</div>
+                    <h3 data-i18n="edu-masters-title">Master's in Security & Systems</h3>
+                    <p data-i18n="edu-masters-desc">Specialization in cybersecurity, security auditing, and data
+                        protection.</p>
                 </div>
             </div>
         </div>
@@ -226,7 +241,7 @@
 
     <!-- Clubs Section -->
     <section class="clubs" id="clubs">
-        <h2 class="section-title">Extracurricular Activities & Clubs</h2>
+        <h2 class="section-title" data-i18n="activities-title">Extracurricular Activities & Clubs</h2>
 
         <div class="clubs-container">
             <!-- DigiGirlz -->
@@ -235,19 +250,23 @@
                     <img src="digi.jpeg" alt="DigiGirlz">
                 </div>
                 <div class="club-content">
-                    <h3>DigiGirlz Program (2023)</h3>
-                    <div class="club-role">Mentor & Group Communication Lead</div>
-                    <p class="club-desc">
+                    <h3 data-i18n="club-digi-title">DigiGirlz Program (2023)</h3>
+                    <div class="club-role" data-i18n="club-digi-role">Mentor & Group Communication Lead</div>
+                    <p class="club-desc" data-i18n="club-digi-desc">
                         • Mentored participants and supported their learning journey.<br>
                         • Managed group communications, coordinated activities, and shared important updates
                         efficiently.<br>
                         • Fostered participant engagement and collaboration throughout the program.
                     </p>
                     <div class="club-skills">
-                        <span><i class="fa-solid fa-users-rectangle"></i> Mentoring</span>
-                        <span><i class="fa-solid fa-comments"></i> Communication</span>
-                        <span><i class="fa-solid fa-crown"></i> Leadership</span>
-                        <span><i class="fa-solid fa-people-group"></i> Engagement</span>
+                        <span><i class="fa-solid fa-users-rectangle"></i> <span
+                                data-i18n="club-skill-mentoring">Mentoring</span></span>
+                        <span><i class="fa-solid fa-comments"></i> <span
+                                data-i18n="club-skill-comm">Communication</span></span>
+                        <span><i class="fa-solid fa-crown"></i> <span
+                                data-i18n="club-skill-leadership">Leadership</span></span>
+                        <span><i class="fa-solid fa-people-group"></i> <span
+                                data-i18n="club-skill-engagement">Engagement</span></span>
                     </div>
                 </div>
             </div>
@@ -258,16 +277,19 @@
                     <img src="itgeeks.jpeg" alt="IT GEEKS Club">
                 </div>
                 <div class="club-content">
-                    <h3>IT GEEKS Club (2025 – Present)</h3>
-                    <div class="club-role">Active Member</div>
-                    <p class="club-desc">
+                    <h3 data-i18n="club-itgeeks-title">IT GEEKS Club (2025 – Present)</h3>
+                    <div class="club-role" data-i18n="club-itgeeks-role">Active Member</div>
+                    <p class="club-desc" data-i18n="club-itgeeks-desc">
                         Participation in technical and collaborative activities. Practical training on versioning tools.
                     </p>
                     <div class="club-skills">
-                        <span><i class="fa-solid fa-users"></i> Teamwork</span>
+                        <span><i class="fa-solid fa-users"></i> <span
+                                data-i18n="club-skill-teamwork">Teamwork</span></span>
                         <span><i class="fa-brands fa-git-alt"></i> Git/GitHub</span>
-                        <span><i class="fa-solid fa-code-branch"></i> Version Control</span>
-                        <span><i class="fa-solid fa-laptop-code"></i> Autonomy</span>
+                        <span><i class="fa-solid fa-code-branch"></i> <span data-i18n="club-skill-vc">Version
+                                Control</span></span>
+                        <span><i class="fa-solid fa-laptop-code"></i> <span
+                                data-i18n="club-skill-autonomy">Autonomy</span></span>
                     </div>
                 </div>
             </div>
@@ -276,7 +298,7 @@
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h2 class="section-title">My Projects</h2>
+        <h2 class="section-title" data-i18n="projects-title">My Projects</h2>
 
         <div class="projects-container">
             <!-- Project 1: ITMS -->
@@ -298,10 +320,10 @@
                         multi-intersection coordination (10x10 grid), emergency priority mode, and realistic vehicle
                         behaviors.</p>
                     <div class="project-links">
-                        <a href="https://github.com/zakichaimae-byte/ADAPTIVE-SIGNAL-CONTROL.git"
-                            class="project-link">View Code <i class="fa-solid fa-code"></i></a>
-                        <a href="#" class="project-link" data-project="itms">Learn More <i
-                                class="fa-solid fa-plus"></i></a>
+                        <a href="https://github.com/zakichaimae-byte/ADAPTIVE-SIGNAL-CONTROL.git" class="project-link"
+                            data-i18n="project-view-code">View Code </a>
+                        <a href="#" class="project-link" data-project="itms" data-i18n="project-learn-more">Learn More
+                            🔍</a>
                     </div>
                 </div>
             </div>
@@ -323,10 +345,10 @@
                     <p>A collaborative project integrating Infrastructure, Public Spaces, Commercial zones, and
                         Residential areas with realistic traffic and pedestrian flows.</p>
                     <div class="project-links">
-                        <a href="https://github.com/zakichaimae-byte/SmatCity.git" class="project-link">View Code <i
-                                class="fa-solid fa-code"></i></a>
-                        <a href="#" class="project-link" data-project="smartcity">Learn More <i
-                                class="fa-solid fa-plus"></i></a>
+                        <a href="https://github.com/zakichaimae-byte/SmatCity.git" class="project-link"
+                            data-i18n="project-view-code">View Code </a>
+                        <a href="#" class="project-link" data-project="smartcity" data-i18n="project-learn-more">Learn
+                            More 🔍</a>
                     </div>
                 </div>
             </div>
@@ -352,9 +374,9 @@
                     </p>
                     <div class="project-links">
                         <a href="https://github.com/gunner206/Reservation-Ressources-Data-Center.git"
-                            class="project-link">View Code <i class="fa-solid fa-code"></i></a>
-                        <a href="#" class="project-link" data-project="datacenter">Learn More <i
-                                class="fa-solid fa-plus"></i></a>
+                            class="project-link" data-i18n="project-view-code">View Code 💻</a>
+                        <a href="#" class="project-link" data-project="datacenter" data-i18n="project-learn-more">Learn
+                            More 🔍</a>
                     </div>
                 </div>
             </div>
@@ -398,7 +420,7 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="section-title">Contact Me</h2>
+        <h2 class="section-title" data-i18n="contact-title">Contact Me</h2>
 
         <div class="contact-container">
             <div class="contact-content-wrapper">
@@ -424,8 +446,8 @@
                         <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn" id="submit-btn">Send Message <i
-                            class="fa-solid fa-paper-plane"></i></button>
+                    <button type="submit" class="btn" id="submit-btn"><span data-i18n="contact-send">Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i></button>
                     <div id="form-status" class="form-status"></div>
                 </form>
             </div>

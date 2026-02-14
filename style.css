@@ -138,10 +138,16 @@ header {
     letter-spacing: 1px;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
 .navbar a {
     margin-left: 2rem;
     font-weight: 500;
     color: var(--text-muted);
+    white-space: nowrap;
 }
 
 .navbar a:hover,
@@ -153,6 +159,43 @@ header {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+}
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 2px;
+    margin-left: 2rem;
+    transition: var(--transition);
+}
+
+.lang-btn {
+    position: relative;
+    padding: 4px 10px;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-family: var(--font-main);
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.lang-btn:hover {
+    color: var(--primary);
+}
+
+.lang-btn.active {
+    color: var(--bg-color);
+    background: var(--primary);
 }
 
 #theme-btn {
@@ -211,32 +254,40 @@ header {
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0.9rem 2.2rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: var(--bg-color);
-    border-radius: 5px;
+    border-radius: 12px;
     font-weight: 600;
-    box-shadow: 0 0 10px var(--primary);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid transparent;
 }
 
 .btn:hover {
-    background: transparent;
-    color: var(--primary);
-    border: 1px solid var(--primary);
-    box-shadow: none;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.3);
+    color: var(--bg-color);
+    background: linear-gradient(135deg, #111, var(--primary));
 }
 
 .btn-outline {
-    background: transparent;
-    border: 1px solid var(--secondary);
-    color: var(--secondary);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--primary);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
 .btn-outline:hover {
-    background: var(--secondary);
+    background: var(--primary);
     color: var(--bg-color);
-    box-shadow: 0 0 10px var(--secondary);
+    border-color: var(--primary);
 }
 
 /* Hero Image */
@@ -618,6 +669,12 @@ header {
     /* Pushes the link to the bottom */
 }
 
+.project-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
 .project-link {
     display: inline-flex;
     align-items: center;
@@ -710,14 +767,9 @@ header {
 }
 
 .contact-form button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    cursor: pointer;
-    border: none;
-    font-size: 1rem;
-    font-family: var(--font-main);
+    width: 100%;
+    /* Make the send button full width on small containers if needed, or just let .btn handle it */
+    margin-top: 1rem;
 }
 
 /* Responsive for form */
@@ -1136,27 +1188,32 @@ header {
 }
 
 .btn-modal {
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
+    padding: 0.9rem 2rem;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: 600;
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
+    border: 1px solid transparent;
 }
 
 .btn-primary {
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: var(--bg-color);
+    box-shadow: 0 8px 15px -5px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:hover {
-    background: var(--secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #111, var(--primary));
 }
 
 .btn-outline {
-    border: 1px solid var(--primary);
+    background: transparent;
+    border: 1.5px solid var(--primary);
     color: var(--primary);
 }
 
