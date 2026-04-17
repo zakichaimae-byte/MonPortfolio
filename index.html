@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page-title">Chaimae Zaki | Web & Backend Developer</title>
+    <title data-i18n="page-title">Chaimae Zaki | Full Stack Developer</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Portfolio of Chaimae Zaki, Software Engineering Student specialized in Backend Development and Cybersecurity. Discover my projects in Laravel, Python, and C++.">
+        content="Portfolio of Chaimae Zaki, Software Engineering Student specialized in Full Stack Development and Artificial Intelligence. Discover my projects in Laravel, Python, and React.">
     <meta name="keywords"
-        content="Chaimae Zaki, Portfolio, Web Developer, Cybersecurity, Laravel, Student Engineer, Backend Developer">
+        content="Chaimae Zaki, Portfolio, Full Stack Developer, Artificial Intelligence, Machine Learning, Laravel, Student Engineer, Backend Developer">
     <meta name="author" content="Chaimae Zaki">
 
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zakichaimae-portfolio.vercel.app/"> <!-- Replace with actual URL -->
-    <meta property="og:title" content="Chaimae Zaki | Future Security Expert & Web Dev">
+    <meta property="og:title" content="Chaimae Zaki | Future AI Expert & Full Stack Dev">
     <meta property="og:description"
-        content="Discover my projects in web development and my journey into cybersecurity.">
+        content="Discover my projects in full stack development and my journey into Artificial Intelligence.">
     <meta property="og:image" content="pro.jpeg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://zakichaimae-portfolio.vercel.app/">
-    <meta property="twitter:title" content="Chaimae Zaki | Future Security Expert & Web Dev">
+    <meta property="twitter:title" content="Chaimae Zaki | Future AI Expert & Full Stack Dev">
     <meta property="twitter:description"
-        content="Discover my projects in web development and my journey into cybersecurity.">
+        content="Discover my projects in full stack development and my journey into Artificial Intelligence.">
     <meta property="twitter:image" content="pro.jpeg">
 
     <!-- Favicon -->
@@ -75,10 +75,20 @@
         <div class="hero-content">
             <h3 data-i18n="hero-greeting">Hello, I am</h3>
             <h1>Chaimae Zaki</h1>
-            <h3 class="text-gradient" data-i18n="hero-role">Web & Backend Developer</h3>
-            <p data-i18n="hero-bio">I enjoy designing efficient backend solutions and building scalable web
-                applications.
-                Ready to contribute and grow as a developer.</p>
+            <h3 class="text-gradient" data-i18n="hero-role">Full Stack Developer</h3>
+            
+            <div class="hero-tags">
+                <div class="hero-tag">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span data-i18n="hero-location">Based in Tangier, Morocco</span>
+                </div>
+                <div class="hero-tag">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span data-i18n="hero-status">Open to internship / junior opportunities</span>
+                </div>
+            </div>
+
+            <p data-i18n="hero-bio">I enjoy designing complete full stack solutions, from intuitive frontends to efficient backends. Ready to contribute and grow as a developer.</p>
 
             <div class="btn-box">
                 <a href="#projects" class="btn" data-i18n="hero-view-projects">View Projects</a>
@@ -104,20 +114,17 @@
         <div class="about-content">
             <h2 class="section-title" style="text-align: left; margin: 0 0 2rem;" data-i18n="about-title">About Me</h2>
             <p class="about-text">
-                <strong data-i18n="about-summary">Final-year Software Engineering Student — Web & Backend
+                <strong data-i18n="about-summary">Final-year Bachelor's in App Dev Engineering — Web & Backend
                     Developer</strong>
                 <br><br>
-                <span data-i18n="about-p1">I am a final-year Software Engineering student with a strong focus on backend
-                    development and building modern web architectures. I enjoy designing and implementing efficient
-                    backend solutions, ensuring scalability and performance across varied projects.</span>
+                <span data-i18n="about-p1">I am a final-year student in a Bachelor's in App Dev Engineering with a strong focus on full stack development, building modern web architectures from frontend to backend. I enjoy designing and implementing efficient solutions, ensuring scalability and performance across varied projects.</span>
                 <br><br>
                 <span data-i18n="about-p2">My academic projects include leading a team to develop a C++ Smart City
-                    Simulation (Raylib) and building a web application with Laravel, showcasing both my collaborative
-                    and technical skills.</span>
+                    Simulation (Raylib) and building web applications with Laravel and Django, showcasing both my
+                    collaborative and technical skills.</span>
                 <br><br>
                 <span data-i18n="about-p3">I am looking for an internship or junior developer role where I can
-                    contribute my expertise, take on technical challenges, and continue growing as a backend
-                    developer.</span>
+                    contribute my expertise, take on technical challenges, and continue growing as a full stack developer.</span>
             </p>
         </div>
     </section>
@@ -127,15 +134,17 @@
         <h2 class="section-title" data-i18n="skills-title">Technical Skills</h2>
 
         <div class="skills-grid">
-            <!-- Core Languages -->
+            <!-- Programming Languages -->
             <div class="skill-category">
-                <h3 data-i18n="skills-core">Core Languages</h3>
+                <h3 data-i18n="lang-progr">Programming Languages</h3>
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
                     <span class="skill-tag"><i class="fa-solid fa-c"></i> C/C++</span>
                     <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
                     <span class="skill-tag"><i class="fa-brands fa-php"></i> PHP</span>
                     <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span class="skill-tag"><i class="fa-brands fa-js"></i> TypeScript</span>
+                    <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
                 </div>
             </div>
 
@@ -145,6 +154,15 @@
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-brands fa-laravel"></i> Laravel</span>
                     <span class="skill-tag" data-i18n="skill-mvc">MVC</span>
+                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Django</span>
+                    <span class="skill-tag" data-i18n="skill-mvt">MVT</span>
+                    <span class="skill-tag"><i class="fa-brands fa-react"></i> React</span>
+                    <span class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                    <span class="skill-tag">REST API</span>
+                    <span class="skill-tag">CRUD</span>
+                    <span class="skill-tag" data-i18n="skill-auth">Authentication</span>
+                    <span class="skill-tag" data-i18n="skill-routing">Routing</span>
+                    <span class="skill-tag" data-i18n="skill-validation">Form Validation</span>
                     <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
                 </div>
             </div>
@@ -155,20 +173,40 @@
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
                     <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+                    <span class="skill-tag">SQLite</span>
                     <span class="skill-tag" data-i18n="skill-merise">Merise</span>
                     <span class="skill-tag" data-i18n="skill-uml">UML</span>
+                    <span class="skill-tag" data-i18n="skill-er">ER Diagram</span>
+                    <span class="skill-tag" data-i18n="skill-class-diag">Class Diagram</span>
+                    <span class="skill-tag" data-i18n="skill-usecase">Use Case Diagram</span>
+                    <span class="skill-tag" data-i18n="skill-sequence">Sequence Diagram</span>
                 </div>
             </div>
 
-            <!-- Automation & Engineering -->
+            <!-- Development Tools -->
             <div class="skill-category">
-                <h3 data-i18n="skills-automation">Automation & Engineering</h3>
+                <h3 data-i18n="skills-tools">Development Tools</h3>
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
                     <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
                     <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux</span>
+                    <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Composer</span>
+                    <span class="skill-tag">JSON</span>
+                    <span class="skill-tag">CMake</span>
                     <span class="skill-tag">VS Code</span>
                     <span class="skill-tag">Raylib</span>
+                </div>
+            </div>
+
+            <!-- Spoken Languages -->
+            <div class="skill-category">
+                <h3 data-i18n="skills-languages">Languages</h3>
+                <div class="skill-items">
+                    <span class="skill-tag"><i class="fa-solid fa-language"></i> <span data-i18n="lang-arabic">Arabic — Native</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-language"></i> <span data-i18n="lang-french">French — Good</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-language"></i> <span data-i18n="lang-english">English — Intermediate</span></span>
                 </div>
             </div>
 
@@ -231,9 +269,8 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date" data-i18n="edu-future">Future Goal</div>
-                    <h3 data-i18n="edu-masters-title">Master's in Security & Systems</h3>
-                    <p data-i18n="edu-masters-desc">Specialization in cybersecurity, security auditing, and data
-                        protection.</p>
+                    <h3 data-i18n="edu-masters-title">Master's in Artificial Intelligence</h3>
+                    <p data-i18n="edu-masters-desc">Specialization in machine learning, deep learning, and intelligent systems development.</p>
                 </div>
             </div>
         </div>
@@ -291,6 +328,27 @@
                         <span><i class="fa-solid fa-laptop-code"></i> <span
                                 data-i18n="club-skill-autonomy">Autonomy</span></span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Workshops & Meetups Section -->
+    <section class="workshops" id="workshops">
+        <h2 class="section-title" data-i18n="workshops-title">Workshops & Meetups</h2>
+
+        <div class="clubs-container">
+            <!-- ITWAVE Meet-Up -->
+            <div class="club-card">
+                <div class="club-img">
+                    <img src="ITWAVE.jpeg" alt="ITWAVE Meet-Up Certificate">
+                </div>
+                <div class="club-content">
+                    <h3 data-i18n="ws-itwave-title">ITWAVE Meet-Up Q&A 2026</h3>
+                    <div class="club-role" data-i18n="ws-itwave-date">15 April 2026</div>
+                    <p class="club-desc" data-i18n="ws-itwave-desc">
+                        Participated in a technology meetup covering artificial intelligence, entrepreneurship, personal branding, and cybersecurity.
+                    </p>
                 </div>
             </div>
         </div>
@@ -381,40 +439,35 @@
                 </div>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project: PreSkool -->
             <div class="project-card">
                 <div class="project-img-wrapper">
-                    <img src="uml.jpeg" alt="Banking UML">
+                    <img src="preskol.jpeg" alt="PreSkool - School Management Platform"
+                        onerror="this.src='https://via.placeholder.com/600x340/1e293b/38bdf8?text=PreSkool';">
                 </div>
                 <div class="project-info">
                     <div class="project-header">
-                        <h3>Banking System (UML)</h3>
+                        <h3>PreSkool — Smart School Management</h3>
                         <div class="tech-stack">
-                            <span>UML</span>
-                            <span>Design</span>
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>SQLite</span>
+                            <span>Bootstrap</span>
+                            <span>MVT</span>
                         </div>
                     </div>
-                    <p>Complete modeling of banking operations. Class, sequence, and use case diagrams.</p>
+                    <p>Intelligent web platform for private schools that centralizes and automates all administrative
+                        and pedagogical operations. Features role-based access (admin, teacher, student), student
+                        management, timetables, library, exams, and an AI chatbot.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/zakichaimae-byte/PreSkool" class="project-link"
+                            data-i18n="project-view-code">View Code 💻</a>
+                        <a href="#" class="project-link" data-project="preskool"
+                            data-i18n="project-learn-more">Learn More 🔍</a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Project 4 -->
-            <div class="project-card">
-                <div class="project-img-wrapper">
-                    <img src="basedonne.jpeg" alt="Banking SQL">
-                </div>
-                <div class="project-info">
-                    <div class="project-header">
-                        <h3>SQL Banking Management</h3>
-                        <div class="tech-stack">
-                            <span>SQL</span>
-                            <span>PhpMyAdmin</span>
-                        </div>
-                    </div>
-                    <p>Creation and management of complex database. Advanced queries to secure and manage transactions.
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
 

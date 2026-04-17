@@ -248,6 +248,38 @@ header {
     margin-bottom: 2rem;
 }
 
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    background: var(--bg-alt);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 1px solid var(--glass-border);
+    transition: var(--transition);
+}
+
+.hero-tag i {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.hero-tag:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+
 .btn-box {
     display: flex;
     gap: 1rem;
@@ -1495,6 +1527,65 @@ footer {
 .club-skills span i {
     color: var(--secondary);
 }
+
+/* Workshops & Certificates */
+.certificate-placeholder {
+    height: 220px;
+    background: linear-gradient(135deg, var(--bg-alt), var(--glass-border));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid var(--glass-border);
+    overflow: hidden;
+}
+
+.certificate-placeholder::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(0,0,0,0.01),
+        rgba(0,0,0,0.01) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    animation: slide 20s linear infinite;
+}
+
+.placeholder-overlay {
+    text-align: center;
+    z-index: 1;
+    color: var(--secondary);
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.placeholder-overlay i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.placeholder-overlay p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.club-card:hover .placeholder-overlay {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes slide {
+    from { transform: translate(-25%, -25%); }
+    to { transform: translate(0, 0); }
+}
+
 
 /* Responsive */
 @media (max-width: 991px) {
