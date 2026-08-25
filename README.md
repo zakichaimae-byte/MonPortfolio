@@ -304,7 +304,7 @@ Découvrez mon portfolio :
 
 * 🌐 Portfolio : [zakichaimae-byte.github.io/MonPortfolio](https://zakichaimae-byte.github.io/MonPortfolio/)
 * 💻 GitHub : [github.com/zakichaimae-byte](https://github.com/zakichaimae-byte)
-* 💼 LinkedIn : [LinkedIn Profile](#)
+* 💼 LinkedIn : [LinkedIn Profile](https://www.linkedin.com/in/chzaki)
 * 📧 Email : disponible sur mon portfolio
 
 ---
