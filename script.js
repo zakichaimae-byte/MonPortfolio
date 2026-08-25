@@ -7,64 +7,56 @@
 const translations = {
     "en": {
         "page-title": "Chaimae Zaki | Full Stack Developer",
-        "nav-home": "Home",
-        "nav-about": "About",
-        "nav-skills": "Skills",
-        "nav-education": "Education",
-        "nav-activities": "Activities",
-        "nav-projects": "Projects",
-        "nav-contact": "Contact",
-        "hero-greeting": "Hello, I am",
-        "hero-role": "Full Stack Developer",
-        "hero-location": "Based in Tangier, Morocco",
-        "hero-status": "Open to internship / junior opportunities",
-        "hero-bio": "I enjoy designing complete full stack solutions, from intuitive frontends to efficient backends. Ready to contribute and grow as a developer.",
+        "nav-home": "HOME",
+        "nav-about": "ABOUT",
+        "nav-experience": "EXPERIENCE",
+        "nav-skills": "SKILLS",
+        "nav-education": "EDUCATION",
+        "nav-activities": "ACTIVITIES",
+        "nav-projects": "PROJECTS",
+        "nav-contact": "CONTACT",
+        "hero-greeting": "HELLO, I'M CHAIMAE",
+        "hero-role-1": "Software Developer",
+        "hero-role-2": "AI Enthusiast.",
+        "hero-location": "Tangier, Morocco",
+        "hero-status": "Open to junior / full-time opportunities",
+        "hero-bio": "I build modern web applications and intelligent digital solutions.",
         "hero-view-projects": "View Projects",
         "hero-download-cv": "Download CV",
         "about-title": "About Me",
-        "about-summary": "Final-year Bachelor's in App Dev Engineering — Full Stack Developer",
-        "about-p1": "I am a final-year student in a Bachelor's in App Dev Engineering with a strong focus on full stack development, building modern web architectures from frontend to backend. I enjoy designing and implementing efficient solutions, ensuring scalability and performance across varied projects.",
+        "about-summary": "Bachelor's Graduate in App Dev Engineering — Full Stack Developer",
+        "about-p1": "I graduated with a Bachelor's in App Dev Engineering with a strong focus on full stack development, building modern web architectures from frontend to backend. I enjoy designing and implementing efficient solutions, ensuring scalability and performance across varied projects.",
         "about-p2": "My academic projects include leading a team to develop a C++ Smart City Simulation (Raylib) and building web applications with Laravel and Django, showcasing both my collaborative and technical skills.",
         "about-p3": "I am looking for an internship or junior developer role where I can contribute my expertise, take on technical challenges, and continue growing as a full stack developer.",
+        "experience-title": "Professional Experience",
+        "exp-company": "SMART AUTOMATION TECHNOLOGIES",
+        "exp-pfe": "Graduation Project (PFE) — OMNILOG",
+        "exp-omnilog-desc": "Development of the B2B marketplace platform, data integration and management, development and integration of platform features, with participation in the integration of the conversational AI chatbot assistant based on RAG and LLM architectures.",
+        "exp-view-project": "View Project",
         "skills-title": "Technical Skills",
-        "skills-core": "Programming Languages",
-        "skills-backend": "Backend & Web",
-        "skill-mvc": "MVC",
-        "skill-mvt": "MVT Model",
-        "skill-auth": "Authentication",
-        "skill-routing": "Routing",
-        "skill-validation": "Form Validation",
-        "skills-db": "Databases & Modeling",
-        "skill-merise": "Merise",
-        "skill-uml": "UML",
-        "skill-er": "ER Diagram",
-        "skill-class-diag": "Class Diagram",
-        "skill-usecase": "Use Case Diagram",
-        "skill-sequence": "Sequence Diagram",
-        "skills-tools": "Development Tools",
+        "skills-frontend": "Frontend",
+        "skills-backend": "Backend",
+        "skills-ai": "AI",
+        "skills-programming": "Programming",
+        "skills-database": "Database",
+        "skills-tools": "Tools",
         "skills-languages": "Languages",
-        "lang-spoken": "Spoken Languages",
-        "lang-progr": "Programming Languages",
-        "lang-arabic": "Arabic \u2014 Native",
-        "lang-french": "French \u2014 Good",
-        "lang-english": "English \u2014 Intermediate",
-        "skills-soft": "Qualities & Soft Skills",
+        "lang-arabic": "Arabic — Native",
+        "lang-french": "French — Good",
+        "lang-english": "English — Intermediate",
+        "skills-soft": "Soft Skills",
         "skill-rigorous": "Rigorous",
         "skill-curious": "Curious",
         "skill-team": "Team Spirit",
         "skill-persistent": "Persistent",
         "skill-learning": "Continuous Learning",
         "edu-title": "My Education",
+        "edu-bachelor-title": "Licence IDAI",
+        "edu-bachelor-desc": "FST Tanger",
+        "edu-deust-title": "DEUST MIPC",
+        "edu-deust-desc": "FST Tanger",
         "edu-bac-title": "Baccalaureate — Physical Sciences",
-        "edu-bac-desc": "Scientific foundation and work discipline.",
-        "edu-deust-title": "DEUST — MIPC",
-        "edu-deust-desc": "Mathematics, Computer Science, Physics, and Chemistry. Solid base: scientific rigor and abstraction.",
-        "edu-present": "Present",
-        "edu-bachelor-title": "Bachelor's in App Dev Engineering",
-        "edu-bachelor-desc": "Computer application development. Focus on software architectures and backend.",
-        "edu-future": "Future Goal",
-        "edu-masters-title": "Master's in Artificial Intelligence",
-        "edu-masters-desc": "Specialization in machine learning, deep learning, and intelligent systems development.",
+        "edu-bac-desc": "FST Tanger",
         "activities-title": "Extracurricular Activities & Clubs",
         "club-digi-title": "DigiGirlz Program (2023)",
         "club-digi-role": "Mentor & Group Communication Lead",
@@ -85,66 +77,94 @@ const translations = {
         "ws-itwave-desc": "Participated in a technology meetup covering artificial intelligence, entrepreneurship, personal branding, and cybersecurity.",
         "ws-itwave-date": "15 April 2026",
         "projects-title": "My Projects",
-        "project-view-code": "View Code 💻",
-        "project-learn-more": "Learn More 🔍",
+        "project-view-code": "View Code",
+        "project-learn-more": "View Case Study",
+        "project-omnilog-tagline": "B2B Marketplace for Material Handling",
+        "project-omnilog-desc": "B2B digital platform for the material handling sector, enabling professionals to discover equipment, vehicles and services, and contact suppliers directly.",
+        "project-role-title": "My role",
+        "project-role-desc": "Frontend Developer • Full-Stack Developer • AI Integration",
+        "project-results-title": "Key Results",
+        "project-result-1": "B2B Marketplace",
+        "project-result-2": "User & role management",
+        "project-result-3": "REST API",
+        "project-result-4": "RAG-based AI Assistant",
         "contact-title": "Contact Me",
-        "contact-send": "Send Message"
+        "contact-send": "Send Message",
+        "filter-all": "All",
+        "filter-web": "Web Development",
+        "filter-ai": "AI & Systems",
+        "pfe-badge": "01 — FEATURED PROJECT",
+        "omnilog-desc-1": "B2B Marketplace dedicated to material handling and transport professionals.",
+        "omnilog-desc-2": "Search and consultation of professional gear and machinery.",
+        "omnilog-desc-3": "Catalog of vehicles and tools tailored for professionals.",
+        "omnilog-desc-4": "Intelligent assistant based on LLM and RAG to guide users.",
+        "omnilog-desc-5": "Connecting users around transport offers and inquiries.",
+        "project-tech-title": "Technologies",
+        "project-omnilog-contrib-summary": "Development of the B2B marketplace platform, data integration and management, development and integration of platform features, with participation in the integration of the conversational AI chatbot assistant based on RAG and LLM architectures.",
+        "other-projects-title": "Other Projects"
     },
     "fr": {
         "page-title": "Chaimae Zaki | Développeuse Full Stack",
-        "nav-home": "Accueil",
-        "nav-about": "À propos",
-        "nav-skills": "Compétences",
-        "nav-education": "Éducation",
-        "nav-activities": "Activités",
-        "nav-projects": "Projets",
-        "nav-contact": "Contact",
-        "hero-greeting": "Bonjour, je suis",
-        "hero-role": "D\u00e9veloppeuse Full Stack",
-        "hero-location": "Bas\u00e9e \u00e0 Tanger, Maroc",
-        "hero-status": "Ouverte aux opportunit\u00e9s de stage / junior",
-        "hero-bio": "J'aime concevoir des solutions full stack compl\u00e8tes, du frontend intuitif au backend performant. Pr\u00eate \u00e0 contribuer et \u00e0 \u00e9voluer en tant que d\u00e9veloppeuse.",
+        "nav-home": "ACCUEIL",
+        "nav-about": "À PROPOS",
+        "nav-experience": "EXPÉRIENCE",
+        "nav-skills": "COMPÉTENCES",
+        "nav-education": "ÉDUCATION",
+        "nav-activities": "ACTIVITÉS",
+        "nav-projects": "PROJETS",
+        "nav-contact": "CONTACT",
+        "hero-greeting": "BONJOUR, JE SUIS CHAIMAE",
+        "hero-role-1": "Développeuse Logiciel",
+        "hero-role-2": "Passionnée d'IA.",
+        "hero-location": "Tanger, Maroc",
+        "hero-status": "Ouverte aux opportunités junior / CDI",
+        "hero-bio": "Je conçois des applications web modernes et des solutions numériques intelligentes.",
         "hero-view-projects": "Voir les Projets",
         "hero-download-cv": "Télécharger CV",
         "about-title": "À Propos de Moi",
-        "about-summary": "Étudiante en dernière année de Licence d'Ingénierie de Développement d'Applications Informatiques — Développeuse Web & Backend",
-        "about-p1": "Je suis étudiante en dernière année de Licence d'Ingénierie de Développement d'Applications Informatiques avec une forte spécialisation en développement backend et en architectures web modernes. J'apprécie concevoir et implémenter des solutions backend performantes, garantissant l'évolutivité sur divers projets.",
+        "about-summary": "Diplômée en Licence d'Ingénierie de Développement d'Applications Informatiques — Développeuse Web & Backend",
+        "about-p1": "Je suis diplômée en Licence d'Ingénierie de Développement d'Applications Informatiques avec une forte spécialisation en développement backend et en architectures web modernes. J'apprécie concevoir et implémenter des solutions backend performantes, garantissant l'évolutivité sur divers projets.",
         "about-p2": "Mes projets académiques incluent la direction d’une équipe pour développer une simulation de ville intelligente en C++ (Raylib) et la création d’applications web avec Laravel et Django, démontrant mes compétences techniques et collaboratives.",
         "about-p3": "Je recherche un stage ou un poste de développeuse junior où je pourrai apporter mon expertise, relever des défis techniques et continuer à progresser en tant que développeuse full stack.",
+        "experience-title": "Expérience Professionnelle",
+        "exp-company": "SMART AUTOMATION TECHNOLOGIES",
+        "exp-pfe": "Projet de Fin d'Études — OMNILOG",
+        "exp-omnilog-desc": "Développement de la plateforme de marketplace B2B, intégration et gestion des données, développement et intégration des fonctionnalités de la plateforme, avec participation à l’intégration de l’assistant chatbot IA conversationnel basé sur les architectures RAG et LLM.",
+        "exp-view-project": "Voir le Projet",
         "skills-title": "Compétences Techniques",
         "skills-core": "Langages de Programmation",
         "skills-backend": "Web & Backend",
-        "skill-mvc": "Mod\u00e8le MVC",
-        "skill-mvt": "Mod\u00e8le MVT",
+        "skill-mvc": "Modèle MVC",
+        "skill-mvt": "Modèle MVT",
         "skill-auth": "Authentification",
         "skill-routing": "Routage",
         "skill-validation": "Validation de Formulaire",
-        "skills-db": "Bases de donn\u00e9es & Mod\u00e9lisation",
-        "skill-merise": "M\u00e9thode Merise",
+        "skills-db": "Bases de données & Modélisation",
+        "skill-merise": "Méthode Merise",
         "skill-uml": "UML",
         "skill-er": "ER Diagram / MCD",
         "skill-class-diag": "Diagramme de Classes",
         "skill-usecase": "Cas d'Utilisation",
-        "skill-sequence": "Diagramme de S\u00e9quence",
-        "skills-tools": "Outils de D\u00e9veloppement",
+        "skill-sequence": "Diagramme de Séquence",
+        "skills-tools": "Outils de Développement",
         "skills-languages": "Langues",
-        "lang-spoken": "Langues Parl\u00e9es",
+        "lang-spoken": "Langues Parlées",
         "lang-progr": "Langages de Programmation",
-        "lang-arabic": "Arabe \u2014 Langue maternelle",
-        "lang-french": "Fran\u00e7ais \u2014 Bon niveau",
-        "lang-english": "Anglais \u2014 Niveau Interm\u00e9diaire",
-        "skills-soft": "Qualit\u00e9s & Soft Skills",
+        "lang-arabic": "Arabe — Langue maternelle",
+        "lang-french": "Français — Bon niveau",
+        "lang-english": "Anglais — Niveau Intermédiaire",
+        "skills-soft": "Qualités & Soft Skills",
         "skill-rigorous": "Rigoureuse",
         "skill-curious": "Curieuse",
-        "skill-team": "Esprit d'\u00c9quipe",
-        "skill-persistent": "Pers\u00e9v\u00e9rante",
+        "skill-team": "Esprit d'Équipe",
+        "skill-persistent": "Persévérante",
         "skill-learning": "Apprentissage Continu",
         "edu-title": "Mon Parcours Scolaire",
         "edu-bac-title": "Baccalauréat — Sciences Physiques",
         "edu-bac-desc": "Bases scientifiques solides et discipline de travail.",
         "edu-deust-title": "DEUST — MIPC",
         "edu-deust-desc": "Mathématiques, Informatique, Physique et Chimie. Base solide : rigueur scientifique et abstraction.",
-        "edu-present": "Présent",
+        "edu-present": "2025 – 2026",
         "edu-bachelor-title": "Licence d'Ingénierie de Développement d'Applications Informatiques",
         "edu-bachelor-desc": "Développement d'applications informatiques. Focus sur les architectures logicielles et le backend.",
         "edu-future": "Objectif Futur",
@@ -167,13 +187,34 @@ const translations = {
         "workshops-title": "Ateliers & Meetups",
         "ws-itwave-title": "ITWAVE Meet-Up Q&A 2026",
         "ws-itwave-cert": "Certificat de Participation",
-        "ws-itwave-desc": "Participation  un meetup technologique traitant de l'intelligence artificielle, de l'entrepreneuriat, du personal branding et de la cybers\u00e9curit\u00e9.",
+        "ws-itwave-desc": "Participation à un meetup technologique traitant de l'intelligence artificielle, de l'entrepreneuriat, du personal branding et de la cybersécurité.",
         "ws-itwave-date": "15 Avril 2026",
         "projects-title": "Mes Projets",
         "project-view-code": "Code Source 💻",
-        "project-learn-more": "En Savoir Plus 🔍",
+        "project-learn-more": "Étude de Cas",
+        "project-omnilog-tagline": "Plateforme B2B pour la Manutention et le Transport",
+        "project-omnilog-desc": "Plateforme digitale B2B dédiée au secteur de la manutention, permettant aux professionnels de découvrir des équipements, véhicules et services et de contacter directement les fournisseurs.",
+        "project-role-title": "Mon rôle",
+        "project-role-desc": "Développeuse Frontend • Développeuse Full-Stack • Intégration IA",
+        "project-results-title": "Résultats Clés",
+        "project-result-1": "Marketplace B2B",
+        "project-result-2": "Gestion des utilisateurs et rôles",
+        "project-result-3": "API REST",
+        "project-result-4": "Assistant IA basé sur RAG",
         "contact-title": "Contactez-moi",
-        "contact-send": "Envoyer le Message"
+        "contact-send": "Envoyer le Message",
+        "filter-all": "Tous",
+        "filter-web": "Développement Web",
+        "filter-ai": "IA & Systèmes",
+        "pfe-badge": "01 — PROJET VEDETTE (PFE)",
+        "omnilog-desc-1": "Marketplace B2B dédiée aux professionnels de la manutention et du transport.",
+        "omnilog-desc-2": "Recherche et consultation d'engins et équipements professionnels.",
+        "omnilog-desc-3": "Catalogue de véhicules et matériels destinés aux professionnels.",
+        "omnilog-desc-4": "Assistant intelligent basé sur LLM et RAG pour accompagner les utilisateurs.",
+        "omnilog-desc-5": "Mise en relation autour des offres et demandes de transport.",
+        "project-tech-title": "Technologies",
+        "project-omnilog-contrib-summary": "Développement de la plateforme de marketplace B2B, intégration et gestion des données, développement et intégration des fonctionnalités de la plateforme, avec participation à l’intégration de l’assistant chatbot IA conversationnel basé sur les architectures RAG et LLM.",
+        "other-projects-title": "Autres Projets"
     }
 };
 
@@ -216,11 +257,92 @@ if (enBtn && frBtn) {
     };
 }
 
-// Initial update
-document.addEventListener("DOMContentLoaded", updateContent);
+// Initial update and filter logic setup
+document.addEventListener("DOMContentLoaded", () => {
+    updateContent();
+    
+    // Project Filtering Logic
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projectCards = document.querySelectorAll(".projects-grid .project-card");
+
+    if (filterButtons.length > 0) {
+        filterButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                filterButtons.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                const filterValue = btn.getAttribute("data-filter");
+
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute("data-category") ? card.getAttribute("data-category").split(" ") : [];
+                    if (filterValue === "all" || categories.includes(filterValue)) {
+                        card.style.display = "flex";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+    }
+});
 
 // Project Details Data with multi-language support
 const projectData = {
+    "omnilog": {
+        title: {
+            "en": "OMNILOG — B2B Material Handling Marketplace",
+            "fr": "OMNILOG — Marketplace B2B de manutention"
+        },
+        tagline: {
+            "en": "Graduation Project (PFE) at Smart Automation Technologies (SAT)",
+            "fr": "Projet de Fin d'Études (PFE) chez Smart Automation Technologies (SAT)"
+        },
+        images: [
+            {
+                src: "omnilog.png",
+                captionEn: "Platform Overview — Homepage & Marketplace",
+                captionFr: "Vue générale de la plateforme — Page d'accueil & Marketplace"
+            },
+            {
+                src: "manutention.png",
+                captionEn: "Material Handling — Equipment Listings & Machinery",
+                captionFr: "Manutention — Annonces d'engins & équipements"
+            },
+            {
+                src: "vehicule.png",
+                captionEn: "Vehicles — Fleet Catalogue for Pros",
+                captionFr: "Véhicules — Catalogue de camions & utilitaires"
+            },
+            {
+                src: "Chatbot.png",
+                captionEn: "AI Chatbot — LLM & RAG Assistant",
+                captionFr: "Chatbot IA — Assistant conversationnel RAG"
+            },
+            {
+                src: "Bourse de Fret Live.png",
+                captionEn: "Freight Exchange — Transport Deals & Listings",
+                captionFr: "Bourse de Fret — Offres & demandes de transport"
+            }
+        ],
+        goal: {
+            "en": "Digitize and centralize transactions between various players in the material handling sector. The platform allows businesses and professionals to publish and manage equipment, vehicles, and services while facilitating direct connection with suppliers.",
+            "fr": "Digitaliser et centraliser les échanges entre les différents acteurs du secteur de la manutention. La plateforme permet aux entreprises et professionnels de consulter, publier et gérer des équipements, véhicules, engins et services, tout en facilitant la mise en relation directe avec les fournisseurs."
+        },
+        contribution: {
+            "en": "Participated in the full design, development, and integration of the platform:<br>• <strong>UI Development (Angular):</strong> Designed and built responsive user interfaces for the B2B Marketplace and product management modules.<br>• <strong>Role Management:</strong> Developed dedicated dashboards and capabilities tailored to distinct user roles (Admin, Super Admin, Supplier, Driver).<br>• <strong>REST API Integration:</strong> Connected the Angular frontend with the Node.js/Express.js backend and MongoDB database.<br>• <strong>AI Assistant Integration:</strong> Integrated an intelligent conversational chatbot utilizing LLM and RAG (Retrieval-Augmented Generation) architectures, exploring Graph RAG to enhance contextual search and document processing.",
+            "fr": "Conception, développement et intégration de la plateforme OMNILOG :<br>• <strong>Développement de l'interface (Angular) :</strong> Conception et intégration des interfaces utilisateur responsive pour la Marketplace et le module de gestion des produits.<br>• <strong>Gestion des rôles :</strong> Mise en place des espaces et fonctionnalités dédiés selon le profil (Administrateur, Super Administrateur, Fournisseur, Chauffeur).<br>• <strong>Intégration d'API REST :</strong> Liaison du frontend Angular avec le backend Node.js / Express.<br>• <strong>Intégration d'un assistant IA :</strong> Intégration d'un chatbot conversationnel basé sur un LLM et une architecture RAG, avec exploration de l'approche Graph RAG pour améliorer la recherche contextuelle et le traitement de documents."
+        },
+        challenges: {
+            "en": "Integrating a conversational assistant based on a LLM and RAG architecture with voice and multilingual interactions (FR, EN, AR, ES), and exploring advanced Graph RAG structures for optimized contextual searches.",
+            "fr": "Intégration d'un assistant conversationnel basé sur un LLM et une architecture RAG avec support multilingue (FR, EN, AR, ES) et interactions vocales, ainsi que l'exploration de l'architecture Graph RAG pour optimiser la recherche contextuelle."
+        },
+        learnings: {
+            "en": ["Angular", "Node.js", "Express.js", "MongoDB", "LLM / RAG", "n8n / Automation", "Graph RAG", "REST API", "TypeScript", "UI/UX & Figma"],
+            "fr": ["Angular", "Node.js", "Express.js", "MongoDB", "LLM / RAG", "n8n / Automatisation", "Graph RAG", "API REST", "TypeScript", "UI/UX & Figma"]
+        },
+        github: "https://github.com/zakichaimae-byte",
+        demo: "#"
+    },
     "itms": {
         title: {
             "en": "Adaptive Signal Control (ITMS)",
@@ -339,9 +461,8 @@ const projectData = {
 const modal = document.getElementById("project-modals");
 const modalBody = document.getElementById("modal-body");
 const closeBtn = document.querySelector(".close-btn");
-const projectButtons = document.querySelectorAll(".project-link[data-project]");
 
-function openModal(projectId) {
+function openModal(projectId, initialSlideIndex = 0) {
     const data = projectData[projectId];
     if (!data) return;
 
@@ -354,12 +475,40 @@ function openModal(projectId) {
 
     let techHtml = learnings.map(tech => `<span class="skill-tag">${tech}</span>`).join('');
 
+    // Build image carousel if images array exists
+    let carouselHtml = '';
+    if (data.images && data.images.length > 0) {
+        const slides = data.images.map((img, i) => {
+            const caption = currentLang === 'fr' ? img.captionFr : img.captionEn;
+            return `
+            <div class="carousel-slide${i === initialSlideIndex ? ' active' : ''}">
+                <img src="${img.src}" alt="${caption}"
+                     onerror="this.parentElement.style.background='#f0f0f0'; this.style.display='none';">
+                <div class="carousel-caption">${caption}</div>
+            </div>`;
+        }).join('');
+
+        const dots = data.images.map((_, i) =>
+            `<button class="carousel-dot${i === initialSlideIndex ? ' active' : ''}" data-index="${i}"></button>`
+        ).join('');
+
+        carouselHtml = `
+        <div class="modal-carousel" id="modal-carousel-${projectId}">
+            <div class="carousel-track">${slides}</div>
+            <button class="carousel-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots">${dots}</div>
+        </div>`;
+    }
+
     const content = `
         <div class="modal-header">
             <h2>${title}</h2>
             <div class="modal-subheader">${tagline}</div>
         </div>
         
+        ${carouselHtml}
+
         <div class="modal-grid">
             <div class="modal-section">
                 <h3><i class="fa-solid fa-bullseye"></i> ${currentLang === 'en' ? 'Goal' : 'Objectif'}</h3>
@@ -389,6 +538,11 @@ function openModal(projectId) {
     void modal.offsetWidth;
     modal.classList.add("show");
     document.body.style.overflow = "hidden";
+
+    // Init carousel after injecting HTML
+    if (data.images && data.images.length > 0) {
+        initCarousel(`modal-carousel-${projectId}`, initialSlideIndex);
+    }
 }
 
 function closeModal() {
@@ -399,12 +553,63 @@ function closeModal() {
     }, 300);
 }
 
-projectButtons.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const projectId = btn.getAttribute("data-project");
-        openModal(projectId);
+function initCarousel(carouselId, initialSlideIndex = 0) {
+    const container = document.getElementById(carouselId);
+    if (!container) return;
+
+    const slides = container.querySelectorAll(".carousel-slide");
+    const dots = container.querySelectorAll(".carousel-dot");
+    const prevBtn = container.querySelector(".carousel-prev");
+    const nextBtn = container.querySelector(".carousel-next");
+    let currentIndex = initialSlideIndex;
+
+    function showSlide(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        currentIndex = index;
+
+        slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === currentIndex);
+        });
+
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === currentIndex);
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.onclick = (e) => {
+            e.stopPropagation();
+            showSlide(currentIndex - 1);
+        };
+    }
+
+    if (nextBtn) {
+        nextBtn.onclick = (e) => {
+            e.stopPropagation();
+            showSlide(currentIndex + 1);
+        };
+    }
+
+    dots.forEach(dot => {
+        dot.onclick = (e) => {
+            e.stopPropagation();
+            const index = parseInt(dot.getAttribute("data-index"));
+            showSlide(index);
+        };
     });
+}
+
+// Bind all items with data-project (cards, text links, buttons)
+document.addEventListener("click", (e) => {
+    const trigger = e.target.closest("[data-project]");
+    if (trigger) {
+        e.preventDefault();
+        const projectId = trigger.getAttribute("data-project");
+        const slideIndexAttr = trigger.getAttribute("data-slide-index");
+        const slideIndex = slideIndexAttr ? parseInt(slideIndexAttr) : 0;
+        openModal(projectId, slideIndex);
+    }
 });
 
 if (closeBtn) closeBtn.addEventListener("click", closeModal);

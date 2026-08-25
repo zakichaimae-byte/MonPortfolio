@@ -8,9 +8,9 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Portfolio of Chaimae Zaki, Software Engineering Student specialized in Full Stack Development and Artificial Intelligence. Discover my projects in Laravel, Python, and React.">
+        content="Portfolio of Chaimae Zaki, Software Engineering Graduate specialized in Full Stack Development and Artificial Intelligence. Discover my projects in Laravel, Python, and React.">
     <meta name="keywords"
-        content="Chaimae Zaki, Portfolio, Full Stack Developer, Artificial Intelligence, Machine Learning, Laravel, Student Engineer, Backend Developer">
+        content="Chaimae Zaki, Portfolio, Full Stack Developer, Artificial Intelligence, Machine Learning, Laravel, Graduate Engineer, Backend Developer">
     <meta name="author" content="Chaimae Zaki">
 
     <!-- Open Graph / Facebook / WhatsApp -->
@@ -35,7 +35,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Icons -->
@@ -49,20 +49,17 @@
 
     <!-- Header -->
     <header>
-        <a href="#" class="logo">Chaimae<span class="text-gradient">.Dev</span></a>
+        <a href="#" class="logo">CHAIMAE ZAKI</a>
 
         <div class="header-icons">
             <div class="bx bx-menu" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
         </div>
 
         <nav class="navbar">
-            <a href="#home" class="active" data-i18n="nav-home">Home</a>
-            <a href="#about" data-i18n="nav-about">About</a>
-            <a href="#skills" data-i18n="nav-skills">Skills</a>
-            <a href="#education" data-i18n="nav-education">Education</a>
-            <a href="#clubs" data-i18n="nav-activities">Activities</a>
-            <a href="#projects" data-i18n="nav-projects">Projects</a>
-            <a href="#contact" data-i18n="nav-contact">Contact</a>
+            <a href="#about" data-i18n="nav-about">ABOUT</a>
+            <a href="#projects" data-i18n="nav-projects">PROJECTS</a>
+            <a href="#skills" data-i18n="nav-skills">SKILLS</a>
+            <a href="#contact" data-i18n="nav-contact">CONTACT</a>
             <div class="lang-switcher">
                 <button id="lang-en" class="lang-btn active">EN</button>
                 <button id="lang-fr" class="lang-btn">FR</button>
@@ -72,35 +69,30 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h3 data-i18n="hero-greeting">Hello, I am</h3>
-            <h1>Chaimae Zaki</h1>
-            <h3 class="text-gradient" data-i18n="hero-role">Full Stack Developer</h3>
-            
-            <div class="hero-tags">
-                <div class="hero-tag">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span data-i18n="hero-location">Based in Tangier, Morocco</span>
-                </div>
-                <div class="hero-tag">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <span data-i18n="hero-status">Open to internship / junior opportunities</span>
-                </div>
-            </div>
-
-            <p data-i18n="hero-bio">I enjoy designing complete full stack solutions, from intuitive frontends to efficient backends. Ready to contribute and grow as a developer.</p>
-
+        <div class="hero-left">
+            <div class="hero-greeting" data-i18n="hero-greeting">HELLO, I'M CHAIMAE</div>
+            <h1 class="hero-title">
+                <span data-i18n="hero-role-1">Software Developer</span><br>
+                <span class="hero-subtitle-amp">&amp; <span data-i18n="hero-role-2">AI Enthusiast.</span></span>
+            </h1>
+            <p class="hero-description" data-i18n="hero-bio">
+                I build modern web applications and intelligent digital solutions.
+            </p>
             <div class="btn-box">
-                <a href="#projects" class="btn" data-i18n="hero-view-projects">View Projects</a>
-                <a href="CV.pdf" download class="btn" data-i18n="hero-download-cv">Download CV</a>
-
+                <a href="#projects" class="btn btn-editorial" data-i18n="hero-view-projects">VIEW MY WORK <span class="arrow">→</span></a>
+                <a href="CV.pdf" download class="btn btn-editorial-outline" data-i18n="hero-download-cv">DOWNLOAD CV</a>
             </div>
         </div>
-
-        <div class="hero-img">
-            <!-- IMPORTANT: User check assets/profile.jpg -->
-            <img src="pro.jpeg" alt="Chaimae Zaki - Profile Picture"
-                onerror="this.src='https://via.placeholder.com/400x400/1e293b/38bdf8?text=Chaimae+Zaki';">
+        <div class="hero-right">
+            <div class="profile-box">
+                <div class="profile-img-container">
+                    <img src="pro.jpeg" alt="Chaimae Zaki - Profile Picture"
+                        onerror="this.src='https://via.placeholder.com/400x400/EEEEEC/171717?text=Chaimae+Zaki';">
+                </div>
+                <div class="profile-location">
+                    <span class="location-dot">●</span> <span data-i18n="hero-location">Tangier, Morocco</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -114,18 +106,70 @@
         <div class="about-content">
             <h2 class="section-title" style="text-align: left; margin: 0 0 2rem;" data-i18n="about-title">About Me</h2>
             <p class="about-text">
-                <strong data-i18n="about-summary">Final-year Bachelor's in App Dev Engineering — Web & Backend
+                <strong data-i18n="about-summary">Bachelor's Graduate in App Dev Engineering — Web & Backend
                     Developer</strong>
                 <br><br>
-                <span data-i18n="about-p1">I am a final-year student in a Bachelor's in App Dev Engineering with a strong focus on full stack development, building modern web architectures from frontend to backend. I enjoy designing and implementing efficient solutions, ensuring scalability and performance across varied projects.</span>
+                <span data-i18n="about-p1">I am a graduate with a Bachelor's in App Dev Engineering with a
+                    strong focus on full stack development, building modern web architectures from frontend to backend.
+                    I enjoy designing and implementing efficient solutions, ensuring scalability and performance across
+                    varied projects.</span>
                 <br><br>
                 <span data-i18n="about-p2">My academic projects include leading a team to develop a C++ Smart City
                     Simulation (Raylib) and building web applications with Laravel and Django, showcasing both my
                     collaborative and technical skills.</span>
                 <br><br>
                 <span data-i18n="about-p3">I am looking for an internship or junior developer role where I can
-                    contribute my expertise, take on technical challenges, and continue growing as a full stack developer.</span>
+                    contribute my expertise, take on technical challenges, and continue growing as a full stack
+                    developer.</span>
             </p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2 class="section-title" data-i18n="experience-title">Professional Experience</h2>
+        
+        <div class="experience-container">
+            <div class="experience-card exp-sat-card">
+                <div class="exp-card-header">
+                    <span class="exp-year">2026</span>
+                    <h3 class="exp-company-name" data-i18n="exp-company">SMART AUTOMATION TECHNOLOGIES</h3>
+                    <div class="exp-subtitle-text" data-i18n="exp-pfe">Projet de Fin d'Études — OMNILOG</div>
+                </div>
+                
+                <div class="exp-image-container">
+                    <img src="SAT.jfif" alt="Smart Automation Technologies" onerror="this.src='https://via.placeholder.com/800x400/FAFAFA/171717?text=Smart+Automation+Technologies';">
+                </div>
+                
+                <div class="exp-card-body">
+                    <h4 class="exp-project-title">OMNILOG</h4>
+                    <div class="exp-project-tagline" data-i18n="project-omnilog-tagline">B2B Marketplace for Material Handling</div>
+                    
+                    <p class="exp-project-description" data-i18n="exp-omnilog-desc">
+                        Développement de la plateforme de marketplace B2B, intégration et gestion des données, développement et intégration des fonctionnalités de la plateforme, avec participation à l’intégration de l’assistant chatbot IA conversationnel basé sur les architectures RAG et LLM.
+                    </p>
+                    
+                    <div class="exp-tech-list">
+                        <span>Angular</span>
+                        <span class="dot">·</span>
+                        <span>Node.js</span>
+                        <span class="dot">·</span>
+                        <span>Express</span>
+                        <span class="dot">·</span>
+                        <span>MongoDB</span>
+                        <span class="dot">·</span>
+                        <span>LLM</span>
+                        <span class="dot">·</span>
+                        <span>RAG</span>
+                    </div>
+                    
+                    <div class="exp-footer">
+                        <a href="#" class="exp-view-project-link" data-project="omnilog">
+                            <span data-i18n="exp-view-project">VIEW PROJECT</span> <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -134,75 +178,76 @@
         <h2 class="section-title" data-i18n="skills-title">Technical Skills</h2>
 
         <div class="skills-grid">
-            <!-- Programming Languages -->
-            <div class="skill-category">
-                <h3 data-i18n="lang-progr">Programming Languages</h3>
+            <!-- Frontend -->
+            <div class="skill-category bento-1x1">
+                <h3 data-i18n="skills-frontend"><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
                 <div class="skill-items">
-                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
-                    <span class="skill-tag"><i class="fa-solid fa-c"></i> C/C++</span>
-                    <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
-                    <span class="skill-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                    <span class="skill-tag"><i class="fa-brands fa-angular"></i> Angular</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
                     <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-                    <span class="skill-tag"><i class="fa-brands fa-js"></i> TypeScript</span>
-                    <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
                 </div>
             </div>
 
-            <!-- Backend & Web -->
-            <div class="skill-category">
-                <h3 data-i18n="skills-backend">Backend & Web</h3>
+            <!-- Backend -->
+            <div class="skill-category bento-1x1">
+                <h3 data-i18n="skills-backend"><i class="fa-solid fa-server"></i> Backend</h3>
                 <div class="skill-items">
+                    <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                    <span class="skill-tag">Express</span>
                     <span class="skill-tag"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                    <span class="skill-tag" data-i18n="skill-mvc">MVC</span>
                     <span class="skill-tag"><i class="fa-brands fa-python"></i> Django</span>
-                    <span class="skill-tag" data-i18n="skill-mvt">MVT</span>
-                    <span class="skill-tag"><i class="fa-brands fa-react"></i> React</span>
-                    <span class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
-                    <span class="skill-tag">REST API</span>
-                    <span class="skill-tag">CRUD</span>
-                    <span class="skill-tag" data-i18n="skill-auth">Authentication</span>
-                    <span class="skill-tag" data-i18n="skill-routing">Routing</span>
-                    <span class="skill-tag" data-i18n="skill-validation">Form Validation</span>
-                    <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
                 </div>
             </div>
 
-            <!-- Databases & Modeling -->
-            <div class="skill-category">
-                <h3 data-i18n="skills-db">Databases & Modeling</h3>
+            <!-- AI -->
+            <div class="skill-category bento-1x1">
+                <h3 data-i18n="skills-ai"><i class="fa-solid fa-brain"></i> AI</h3>
                 <div class="skill-items">
-                    <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
-                    <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
-                    <span class="skill-tag">SQLite</span>
-                    <span class="skill-tag" data-i18n="skill-merise">Merise</span>
-                    <span class="skill-tag" data-i18n="skill-uml">UML</span>
-                    <span class="skill-tag" data-i18n="skill-er">ER Diagram</span>
-                    <span class="skill-tag" data-i18n="skill-class-diag">Class Diagram</span>
-                    <span class="skill-tag" data-i18n="skill-usecase">Use Case Diagram</span>
-                    <span class="skill-tag" data-i18n="skill-sequence">Sequence Diagram</span>
+                    <span class="skill-tag">LLM</span>
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag"><i class="fa-solid fa-comments"></i> Chatbots</span>
+                    <span class="skill-tag">n8n</span>
                 </div>
             </div>
 
-            <!-- Development Tools -->
-            <div class="skill-category">
-                <h3 data-i18n="skills-tools">Development Tools</h3>
+            <!-- Programming -->
+            <div class="skill-category bento-1x1">
+                <h3 data-i18n="skills-programming"><i class="fa-solid fa-code"></i> Programming</h3>
+                <div class="skill-items">
+                    <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="skill-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                </div>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-category bento-1x1">
+                <h3 data-i18n="skills-database"><i class="fa-solid fa-database"></i> Database</h3>
+                <div class="skill-items">
+                    <span class="skill-tag"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-category bento-1x1">
+                <h3 data-i18n="skills-tools"><i class="fa-solid fa-toolbox"></i> Tools</h3>
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
                     <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
-                    <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux</span>
                     <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
-                    <span class="skill-tag">Postman</span>
-                    <span class="skill-tag">Composer</span>
-                    <span class="skill-tag">JSON</span>
-                    <span class="skill-tag">CMake</span>
+                    <span class="skill-tag"><i class="fa-brands fa-figma"></i> Figma</span>
                     <span class="skill-tag">VS Code</span>
-                    <span class="skill-tag">Raylib</span>
                 </div>
             </div>
 
             <!-- Spoken Languages -->
-            <div class="skill-category">
-                <h3 data-i18n="skills-languages">Languages</h3>
+            <div class="skill-category bento-1x1">
+                <h3 data-i18n="skills-languages"><i class="fa-solid fa-language"></i> Languages</h3>
                 <div class="skill-items">
                     <span class="skill-tag"><i class="fa-solid fa-language"></i> <span data-i18n="lang-arabic">Arabic — Native</span></span>
                     <span class="skill-tag"><i class="fa-solid fa-language"></i> <span data-i18n="lang-french">French — Good</span></span>
@@ -211,19 +256,14 @@
             </div>
 
             <!-- Soft Skills -->
-            <div class="skill-category">
-                <h3 data-i18n="skills-soft">Qualities & Soft Skills</h3>
+            <div class="skill-category bento-2x1">
+                <h3 data-i18n="skills-soft"><i class="fa-solid fa-circle-check"></i> Soft Skills</h3>
                 <div class="skill-items">
-                    <span class="skill-tag"><i class="fa-solid fa-check-circle"></i> <span
-                            data-i18n="skill-rigorous">Rigorous</span></span>
-                    <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> <span
-                            data-i18n="skill-curious">Curious</span></span>
-                    <span class="skill-tag"><i class="fa-solid fa-people-group"></i> <span data-i18n="skill-team">Team
-                            Spirit</span></span>
-                    <span class="skill-tag"><i class="fa-solid fa-person-running"></i> <span
-                            data-i18n="skill-persistent">Persistent</span></span>
-                    <span class="skill-tag"><i class="fa-solid fa-brain"></i> <span
-                            data-i18n="skill-learning">Continuous Learning</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-check-circle"></i> <span data-i18n="skill-rigorous">Rigorous</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> <span data-i18n="skill-curious">Curious</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-people-group"></i> <span data-i18n="skill-team">Team Spirit</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-person-running"></i> <span data-i18n="skill-persistent">Persistent</span></span>
+                    <span class="skill-tag"><i class="fa-solid fa-brain"></i> <span data-i18n="skill-learning">Continuous Learning</span></span>
                 </div>
             </div>
         </div>
@@ -234,43 +274,33 @@
         <h2 class="section-title" data-i18n="edu-title">My Education</h2>
 
         <div class="timeline">
-            <!-- Item 4: Bac -->
+            <!-- Licence IDAI -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="timeline-date">2021 – 2022</div>
-                    <h3 data-i18n="edu-bac-title">Baccalaureate — Physical Sciences</h3>
-                    <p data-i18n="edu-bac-desc">Scientific foundation and work discipline.</p>
+                    <div class="timeline-date">2025 – 2026</div>
+                    <h3 data-i18n="edu-bachelor-title">Licence IDAI</h3>
+                    <p data-i18n="edu-bachelor-desc">FST Tanger</p>
                 </div>
             </div>
+
+            <!-- DEUST MIPC -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">2022 – 2025</div>
-                    <h3 data-i18n="edu-deust-title">DEUST — MIPC</h3>
-                    <p data-i18n="edu-deust-desc">Mathematics, Computer Science, Physics, and Chemistry.<br>
-                        Solid base: scientific rigor and abstraction.</p>
+                    <h3 data-i18n="edu-deust-title">DEUST MIPC</h3>
+                    <p data-i18n="edu-deust-desc">FST Tanger</p>
                 </div>
             </div>
 
-            <!-- Item 1 -->
+            <!-- Bac -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="timeline-date" data-i18n="edu-present">Present</div>
-                    <h3 data-i18n="edu-bachelor-title">Bachelor's in App Dev Engineering</h3>
-                    <p data-i18n="edu-bachelor-desc">Computer application development. Focus on software architectures
-                        and backend.</p>
-                </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date" data-i18n="edu-future">Future Goal</div>
-                    <h3 data-i18n="edu-masters-title">Master's in Artificial Intelligence</h3>
-                    <p data-i18n="edu-masters-desc">Specialization in machine learning, deep learning, and intelligent systems development.</p>
+                    <div class="timeline-date">2021 – 2022</div>
+                    <h3 data-i18n="edu-bac-title">Baccalauréat Sciences Physiques</h3>
+                    <p data-i18n="edu-bac-desc">FST Tanger</p>
                 </div>
             </div>
         </div>
@@ -332,7 +362,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Workshops & Meetups Section -->
     <section class="workshops" id="workshops">
         <h2 class="section-title" data-i18n="workshops-title">Workshops & Meetups</h2>
@@ -347,7 +377,8 @@
                     <h3 data-i18n="ws-itwave-title">ITWAVE Meet-Up Q&A 2026</h3>
                     <div class="club-role" data-i18n="ws-itwave-date">15 April 2026</div>
                     <p class="club-desc" data-i18n="ws-itwave-desc">
-                        Participated in a technology meetup covering artificial intelligence, entrepreneurship, personal branding, and cybersecurity.
+                        Participated in a technology meetup covering artificial intelligence, entrepreneurship, personal
+                        branding, and cybersecurity.
                     </p>
                 </div>
             </div>
@@ -355,12 +386,144 @@
     </section>
 
     <!-- Projects Section -->
+    <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h2 class="section-title" data-i18n="projects-title">My Projects</h2>
+        
+        <!-- FEATURED PROJECT: OMNILOG -->
+        <div class="featured-project-section">
+            <div class="featured-project-header">
+                <span class="featured-label" data-i18n="pfe-badge">01 — FEATURED PROJECT</span>
+                <h2 class="featured-title">OMNILOG</h2>
+                <p class="featured-subtitle" data-i18n="project-omnilog-tagline">B2B Marketplace for Material Handling</p>
+            </div>
 
-        <div class="projects-container">
+            <!-- Asymmetric Gallery -->
+            <div class="omnilog-grid">
+                <!-- Image 1: Main Platform -->
+                <div class="omnilog-grid-item omnilog-main" data-project="omnilog" data-slide-index="0">
+                    <div class="omnilog-img-wrapper">
+                        <img src="omnilog.png" alt="OMNILOG — Vue générale" onerror="this.src='https://via.placeholder.com/800x450/EEEEEC/171717?text=OMNILOG';">
+                        <div class="hover-overlay">
+                            <span class="hover-arrow">↗</span>
+                        </div>
+                    </div>
+                    <div class="omnilog-caption">
+                        <span class="omnilog-num">01 / PLATFORM</span>
+                        <h4 class="omnilog-title-text">OMNILOG</h4>
+                        <p class="omnilog-desc-text" data-i18n="omnilog-desc-1">Marketplace B2B dédiée aux professionnels de la manutention et du transport.</p>
+                    </div>
+                </div>
+
+                <!-- Image 2: Manutention -->
+                <div class="omnilog-grid-item omnilog-secondary" data-project="omnilog" data-slide-index="1">
+                    <div class="omnilog-img-wrapper">
+                        <img src="manutention.png" alt="Manutention" onerror="this.src='https://via.placeholder.com/500x350/EEEEEC/171717?text=MANUTENTION';">
+                        <div class="hover-overlay">
+                            <span class="hover-arrow">↗</span>
+                        </div>
+                    </div>
+                    <div class="omnilog-caption">
+                        <span class="omnilog-num">02 / MARKETPLACE</span>
+                        <h4 class="omnilog-title-text">MANUTENTION</h4>
+                        <p class="omnilog-desc-text" data-i18n="omnilog-desc-2">Recherche et consultation d'engins et équipements professionnels.</p>
+                    </div>
+                </div>
+
+                <!-- Image 3: Véhicules -->
+                <div class="omnilog-grid-item omnilog-secondary" data-project="omnilog" data-slide-index="2">
+                    <div class="omnilog-img-wrapper">
+                        <img src="vehicule.png" alt="Véhicules" onerror="this.src='https://via.placeholder.com/500x350/EEEEEC/171717?text=VEHICULES';">
+                        <div class="hover-overlay">
+                            <span class="hover-arrow">↗</span>
+                        </div>
+                    </div>
+                    <div class="omnilog-caption">
+                        <span class="omnilog-num">03 / VEHICLES</span>
+                        <h4 class="omnilog-title-text">VÉHICULES</h4>
+                        <p class="omnilog-desc-text" data-i18n="omnilog-desc-3">Catalogue de véhicules et matériels destinés aux professionnels.</p>
+                    </div>
+                </div>
+
+                <!-- Image 4: Chatbot IA -->
+                <div class="omnilog-grid-item omnilog-secondary" data-project="omnilog" data-slide-index="3">
+                    <div class="omnilog-img-wrapper">
+                        <img src="Chatbot.png" alt="Chatbot IA" onerror="this.src='https://via.placeholder.com/500x350/EEEEEC/171717?text=CHATBOT+IA';">
+                        <div class="hover-overlay">
+                            <span class="hover-arrow">↗</span>
+                        </div>
+                    </div>
+                    <div class="omnilog-caption">
+                        <span class="omnilog-num">04 / AI ASSISTANT</span>
+                        <h4 class="omnilog-title-text">CHATBOT IA</h4>
+                        <p class="omnilog-desc-text" data-i18n="omnilog-desc-4">Assistant intelligent basé sur LLM et RAG pour accompagner les utilisateurs.</p>
+                    </div>
+                </div>
+
+                <!-- Image 5: Bourse de Fret -->
+                <div class="omnilog-grid-item omnilog-secondary" data-project="omnilog" data-slide-index="4">
+                    <div class="omnilog-img-wrapper">
+                        <img src="Bourse de Fret Live.png" alt="Bourse de Fret" onerror="this.src='https://via.placeholder.com/500x350/EEEEEC/171717?text=BOURSE+DE+FRET';">
+                        <div class="hover-overlay">
+                            <span class="hover-arrow">↗</span>
+                        </div>
+                    </div>
+                    <div class="omnilog-caption">
+                        <span class="omnilog-num">05 / FREIGHT</span>
+                        <h4 class="omnilog-title-text">BOURSE DE FRET</h4>
+                        <p class="omnilog-desc-text" data-i18n="omnilog-desc-5">Mise en relation autour des offres et demandes de transport.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contribution & Case Study Button -->
+            <div class="featured-project-footer">
+                <div class="featured-info-columns">
+                    <div class="info-column">
+                        <h4 class="featured-section-label" data-i18n="project-tech-title">Technologies</h4>
+                        <div class="tech-tags-minimal">
+                            <span>Angular</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>REST API</span>
+                            <span>LLM</span>
+                            <span>RAG</span>
+                        </div>
+                    </div>
+                    <div class="info-column">
+                        <h4 class="featured-section-label" data-i18n="project-role-title">My contribution</h4>
+                        <p class="featured-contribution-text" data-i18n="project-omnilog-contrib-summary">
+                            Développement de la plateforme de marketplace B2B, intégration et gestion des données, développement et intégration des fonctionnalités de la plateforme, avec participation à l'intégration de l'assistant chatbot IA conversationnel basé sur les architectures RAG et LLM.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="featured-action-box">
+                    <a href="#" class="btn btn-editorial btn-omnilog-case-study" data-project="omnilog">
+                        <span data-i18n="project-learn-more">View Case Study</span> <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-separator">
+
+        <!-- OTHER PROJECTS -->
+        <div class="other-projects-section">
+            <h3 class="other-projects-title" data-i18n="other-projects-title">Other Projects</h3>
+
+            <!-- Filter Tabs -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All</button>
+                <button class="filter-btn" data-filter="web" data-i18n="filter-web">Web Development</button>
+                <button class="filter-btn" data-filter="ai" data-i18n="filter-ai">AI & Systems</button>
+            </div>
+
+            <!-- Projects Bento Grid -->
+            <div class="projects-grid">
+
             <!-- Project 1: ITMS -->
-            <div class="project-card">
+            <div class="project-card" data-category="ai">
                 <div class="project-img-wrapper">
                     <img src="similation.jpeg" alt="Intelligent Traffic Management System">
                 </div>
@@ -368,10 +531,10 @@
                     <div class="project-header">
                         <h3>Intelligent Traffic Management System (ITMS)</h3>
                         <div class="tech-stack">
-                            <span>C++17</span>
-                            <span>Raylib</span>
-                            <span>CMake</span>
-                            <span>Algorithms</span>
+                            <span class="tag-cpp">C++17</span>
+                            <span class="tag-raylib">Raylib</span>
+                            <span class="tag-cmake">CMake</span>
+                            <span class="tag-algo">Algorithms</span>
                         </div>
                     </div>
                     <p>Advanced traffic simulation reducing urban congestion. Features adaptive timing logic (10s-90s),
@@ -386,8 +549,8 @@
                 </div>
             </div>
 
-            <!-- Project 2 (Original Project 1) -->
-            <div class="project-card">
+            <!-- Project 2: Smart City Simulation -->
+            <div class="project-card" data-category="ai">
                 <div class="project-img-wrapper">
                     <img src="smartcity.jpeg" alt="Smart City Simulation">
                 </div>
@@ -395,9 +558,9 @@
                     <div class="project-header">
                         <h3>Smart City Simulation</h3>
                         <div class="tech-stack">
-                            <span>C++</span>
-                            <span>Raylib</span>
-                            <span>Urban Modeling</span>
+                            <span class="tag-cpp">C++</span>
+                            <span class="tag-raylib">Raylib</span>
+                            <span class="tag-modeling">Urban Modeling</span>
                         </div>
                     </div>
                     <p>A collaborative project integrating Infrastructure, Public Spaces, Commercial zones, and
@@ -411,8 +574,8 @@
                 </div>
             </div>
 
-            <!-- Project 2: Data Center Resource Manager -->
-            <div class="project-card">
+            <!-- Project 3: Data Center Resource Manager -->
+            <div class="project-card" data-category="web">
                 <div class="project-img-wrapper">
                     <img src="datacenter.jpeg" alt="Data Center Resource Manager">
                 </div>
@@ -420,10 +583,10 @@
                     <div class="project-header">
                         <h3>Data Center Resource Manager</h3>
                         <div class="tech-stack">
-                            <span>Laravel 11</span>
-                            <span>PHP 8.2</span>
-                            <span>MySQL</span>
-                            <span>RBAC</span>
+                            <span class="tag-laravel">Laravel 11</span>
+                            <span class="tag-php">PHP 8.2</span>
+                            <span class="tag-mysql">MySQL</span>
+                            <span class="tag-rbac">RBAC</span>
                         </div>
                     </div>
                     <p>Complete management system for Data Center resources.
@@ -439,8 +602,8 @@
                 </div>
             </div>
 
-            <!-- Project: PreSkool -->
-            <div class="project-card">
+            <!-- Project 4: PreSkool -->
+            <div class="project-card" data-category="web ai">
                 <div class="project-img-wrapper">
                     <img src="preskol.jpeg" alt="PreSkool - School Management Platform"
                         onerror="this.src='https://via.placeholder.com/600x340/1e293b/38bdf8?text=PreSkool';">
@@ -449,11 +612,11 @@
                     <div class="project-header">
                         <h3>PreSkool — Smart School Management</h3>
                         <div class="tech-stack">
-                            <span>Django</span>
-                            <span>Python</span>
-                            <span>SQLite</span>
-                            <span>Bootstrap</span>
-                            <span>MVT</span>
+                            <span class="tag-django">Django</span>
+                            <span class="tag-python">Python</span>
+                            <span class="tag-sqlite">SQLite</span>
+                            <span class="tag-bootstrap">Bootstrap</span>
+                            <span class="tag-mvt">MVT</span>
                         </div>
                     </div>
                     <p>Intelligent web platform for private schools that centralizes and automates all administrative
@@ -462,8 +625,8 @@
                     <div class="project-links">
                         <a href="https://github.com/zakichaimae-byte/PreSkool" class="project-link"
                             data-i18n="project-view-code">View Code 💻</a>
-                        <a href="#" class="project-link" data-project="preskool"
-                            data-i18n="project-learn-more">Learn More 🔍</a>
+                        <a href="#" class="project-link" data-project="preskool" data-i18n="project-learn-more">Learn
+                            More 🔍</a>
                     </div>
                 </div>
             </div>
